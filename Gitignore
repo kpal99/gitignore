@@ -5,7 +5,6 @@
 #
 # Swap
 [._]*.s[a-v][a-z]
-!*.svg  # comment out if you don't need vector files
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
@@ -18,9 +17,44 @@ Sessionx.vim
 # Temporary
 .netrwhist
 *~
+
 # Persistent undo
 [._]*.un~
 
+# Orig files before modifying them, there were tracked by git so :shrug:
+*.Orig
+
+# ROOT-related files
+*.root
+*_cc.d
+*_cc.so
+*_C.d
+*_C.so
+*\#*
+.\#*
+AutoDict_*
+
+# SCRAM business
+__init__.py
+*.pyc
+__pycache__/
+.__afs*
+# CRAB3 stuff
+crab_*
+crabConfig_*
+
+# Other temp files
+*.log
+*.out
+*.tmp
+*.pcm
+*.o
+*.err
+# pdf not included unless specified so
+*.pdf
+
+#ctags
+tags
 
 **/.archives_txt/
 **/archive/
