@@ -1,28 +1,20 @@
-#vim realted ignores
-#
-#stole from :)
-#https://github.com/github/gitignore/blob/main/Global/Vim.gitignore
-#
-# Swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-rt-v][a-z]
-[._]ss[a-gi-z]
-[._]sw[a-p]
-
-# Session
-Session.vim
-Sessionx.vim
-
-# Temporary
-.netrwhist
-*~
-
-# Persistent undo
-[._]*.un~
+**/untracked/
+**/archive/
+**/.archives_txt/
 
 # Orig files before modifying them, there were tracked by git so :shrug:
 *.Orig
+
+# Other temp files
+*.log
+*.out
+*.tmp
+*.pcm
+*.o
+*.err
+
+# pdf not included unless specified so
+*.pdf
 
 # ROOT-related files
 *.root
@@ -43,19 +35,27 @@ __pycache__/
 crab_*
 crabConfig_*
 
-# Other temp files
-*.log
-*.out
-*.tmp
-*.pcm
-*.o
-*.err
-# pdf not included unless specified so
-*.pdf
+#vim realted ignores
+#stole from :)
+#https://github.com/github/gitignore/blob/main/Global/Vim.gitignore
+#
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
 
-#ctags
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+
+# Auto-generated tag files
 tags
 
-**/.archives_txt/
-**/archive/
-**/untracked/
+# Persistent undo
+[._]*.un~
