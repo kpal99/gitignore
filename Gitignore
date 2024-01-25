@@ -35,6 +35,10 @@ __pycache__/
 crab_*
 crabConfig_*
 
+# MacOS and windows related files
+.DS_Store
+Thumbs.db
+
 #vim realted ignores
 #stole from :)
 #https://github.com/github/gitignore/blob/main/Global/Vim.gitignore
